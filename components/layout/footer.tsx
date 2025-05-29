@@ -1,5 +1,5 @@
 import React from "react";
-import { Code, Mail, Phone, MapPin, Instagram, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Footer() {
@@ -9,9 +9,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand Column */}
           <div className="flex flex-col gap-4">
-            <a href="#" className="flex items-center gap-2 text-xl font-bold">
-              <Code className="h-6 w-6 text-primary" />
-              <span className="gradient-text">CodeStudio</span>
+            <a href="#" className="flex items-center gap-2">
+              <img src="/wevolt-logo.svg" alt="Logo WEvolt" className="h-8" />
             </a>
             <p className="text-sm text-muted-foreground">
               Creating modern, responsive, and beautiful websites with cutting-edge technology.
@@ -73,7 +72,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 border-t border-border/50 pt-6 text-center text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} CodeStudio. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} WEvolt. All rights reserved.</p>
         </div>
       </div>
     </footer>
