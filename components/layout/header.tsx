@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { Menu, X, Code } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
@@ -55,9 +55,9 @@ export default function Header() {
       }}
     >
       <div className="container mx-auto flex items-center justify-between px-4">
-        <a href="#" className="flex items-center gap-2 text-xl font-bold text-primary">
-          <Code className="h-8 w-8" />
-          <span className="gradient-text">CodeStudio</span>
+        {/* LOGO personalizado */}
+        <a href="#" className="flex items-center gap-2">
+          <img src="/logo-wevolt.svg" alt="Logo WEvolt" className="h-10" />
         </a>
 
         {/* Desktop Navigation */}
