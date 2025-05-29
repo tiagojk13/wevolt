@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="flex flex-col gap-4">
             <a href="#" className="flex items-center gap-2">
-              <img src="/wevolt-logo.svg" alt="Logo WEvolt" className="h-8" />
+              <img src="/logo-wevolt.svg" alt="Logo Wevolt" className="h-8" />
             </a>
             <p className="text-sm text-muted-foreground">
               Creating modern, responsive, and beautiful websites with cutting-edge technology.
