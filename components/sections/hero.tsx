@@ -20,7 +20,7 @@ export default function HeroSection() {
     <section
       id="hero"
       ref={ref}
-      className="relative flex min-h-[70vh] overflow-hidden px-4 pt-32 lg:pt-24"
+      className="relative flex min-h-[70vh] overflow-hidden px-4 pt-52 lg:pt-40"
     >
       {/* Background light effects */}
       <div className="absolute inset-0 z-0">
