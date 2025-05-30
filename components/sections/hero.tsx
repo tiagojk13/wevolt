@@ -57,7 +57,7 @@ export default function HeroSection() {
                   size="xl"
                   className="bg-gradient-to-r from-[#24b2ff] to-[#9c3dff] hover:brightness-110"
                 >
-                  Get Started <ArrowRight className="ml-2 h-4 w-4" />
+                  Solicite um orçamento <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </div>
             </RevealAnimation>
