@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Lightbulb, Code, PenTool, Rocket, ArrowRight } from "lucide-react";
 import RevealAnimation from "@/components/animations/reveal-animation";
-import { ButtonGlow } from "@/components/ui/button-glow";
+import { Button } from "@/components/ui/button";
 
 const processSteps = [
   {
@@ -45,7 +45,7 @@ export default function ProcessSection() {
   const [activeStep, setActiveStep] = useState<number | null>(null);
 
   return (
-    <section id="process\" className="py-20">
+    <section id="process" className="py-20">
       <div className="container mx-auto px-4">
         <RevealAnimation>
           <div className="mx-auto mb-16 max-w-3xl text-center">
@@ -121,10 +121,15 @@ export default function ProcessSection() {
         </div>
 
         <RevealAnimation delay={0.8}>
-          <div className="mt-16 text-center">
-            <ButtonGlow variant="secondary" size="lg">
-              Start Your Project <ArrowRight className="ml-2 h-5 w-5" />
-            </ButtonGlow>
+          <div className="mt-16 flex justify-center">
+            <Button
+              variant="glow"
+              size="xl"
+              className="bg-gradient-to-r from-[#24b2ff] to-[#9c3dff] hover:brightness-110"
+            >
+              Start Your Project
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
           </div>
         </RevealAnimation>
       </div>
