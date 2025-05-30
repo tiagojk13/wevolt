@@ -104,10 +104,10 @@ export default function ValuePropositionSection() {
                 </motion.div>
               </div>
               
-              <h3 className="mb-4 text-xl font-semibold">Fast Performance</h3>
+              <h3 className="mb-4 text-xl font-semibold">Performance Rápida</h3>
               
               <p className="mb-6 flex-grow text-muted-foreground">
-                We optimize every aspect of your website to ensure lightning-fast load times and smooth performance.
+                Otimizamos todos os aspectos do seu site para garantir tempos de carregamento extremamente rápidos e um desempenho impecável. A velocidade é crucial para a retenção de usuários e o posicionamento em SEO.
                 Speed is crucial for user retention and SEO rankings.
               </p>
               
@@ -127,7 +127,7 @@ export default function ValuePropositionSection() {
               size="xl"
               className="bg-gradient-to-r from-[#24b2ff] to-[#9c3dff] hover:brightness-110"
             >
-              Learn More About Our Approach
+              Saiba mais sobre nossa abordagem
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
