@@ -10,7 +10,7 @@ const processSteps = [
   {
     id: 1,
     title: "Discovery",
-    description: "We learn about your goals, audience, and requirements to plan the perfect solution.",
+    description: "Aprendemos sobre sua empresa, eus objetivos, público e requisitos para planejar a solução ideal.",
     icon: <Lightbulb className="h-8 w-8" />,
     color: "bg-primary/10",
     iconColor: "text-primary",
@@ -18,23 +18,23 @@ const processSteps = [
   {
     id: 2,
     title: "Design",
-    description: "Our designers create wireframes and mockups that align with your brand and goals.",
+    description: "Criamos wireframes que se alinham com sua marca e seus objetivos. Também podemos trabalhar no conteúdo",
     icon: <PenTool className="h-8 w-8" />,
     color: "bg-secondary/10",
     iconColor: "text-secondary",
   },
   {
     id: 3,
-    title: "Development",
-    description: "Our developers bring the designs to life with clean, efficient, and modern code.",
+    title: "Desenvolvimento",
+    description: "Damos vida aos designs com código limpo, eficiente e moderno.",
     icon: <Code className="h-8 w-8" />,
     color: "bg-accent/10",
     iconColor: "text-accent",
   },
   {
     id: 4,
-    title: "Deployment",
-    description: "We launch your project and provide ongoing support and maintenance as needed.",
+    title: "Deploy",
+    description: "Lançamos seu projeto em plataformas open source que podem ter custo 0. Além disso, podemos fornecer suporte e manutenção contínuos, conforme necessário.",
     icon: <Rocket className="h-8 w-8" />,
     color: "bg-primary/10",
     iconColor: "text-primary",
@@ -49,10 +49,9 @@ export default function ProcessSection() {
       <div className="container mx-auto px-4">
         <RevealAnimation>
           <div className="mx-auto mb-16 max-w-3xl text-center">
-            <h2 className="mb-4 gradient-text">Our Process</h2>
+            <h2 className="mb-4 text-white">Nosso processo</h2>
             <p className="text-lg text-muted-foreground">
-              We follow a structured approach to ensure every project is delivered with the highest quality.
-              Our process is designed to be transparent, collaborative, and efficient.
+              Seguimos uma abordagem estruturada para garantir que cada projeto seja entregue com a mais alta qualidade. Nosso processo é projetado para ser rápido, colaborativo e eficiente.
             </p>
           </div>
         </RevealAnimation>
@@ -127,7 +126,7 @@ export default function ProcessSection() {
               size="xl"
               className="bg-gradient-to-r from-[#24b2ff] to-[#9c3dff] hover:brightness-110"
             >
-              Start Your Project
+              Crei seu site com velocidade
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </div>
