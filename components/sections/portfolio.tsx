@@ -93,18 +93,38 @@ export default function PortfolioSection() {
                     {item.category}
                   </motion.p>
                   
-                  <motion.button
-                    className="flex items-center justify-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
-                    initial={{ y: 20, opacity: 0 }}
-                    animate={{ 
-                      y: hoveredItem === item.id ? 0 : 20, 
-                      opacity: hoveredItem === item.id ? 1 : 0 
-                    }}
-                    transition={{ duration: 0.3, delay: 0.3 }}
-                    whileHover={{ scale: 1.05 }}
-                  >
-                    View Project <LinkIcon className="h-4 w-4" />
-                  </motion.button>
+                  {/* Diferenciação: Link real só no primeiro card */}
+                  {item.id === 1 ? (
+                    <motion.a
+                      href="https://tiagoproject.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
+                      initial={{ y: 20, opacity: 0 }}
+                      animate={{ 
+                        y: hoveredItem === item.id ? 0 : 20, 
+                        opacity: hoveredItem === item.id ? 1 : 0 
+                      }}
+                      transition={{ duration: 0.3, delay: 0.3 }}
+                      whileHover={{ scale: 1.05 }}
+                    >
+                      View Project <LinkIcon className="h-4 w-4" />
+                    </motion.a>
+                  ) : (
+                    <motion.button
+                      className="flex items-center justify-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
+                      initial={{ y: 20, opacity: 0 }}
+                      animate={{ 
+                        y: hoveredItem === item.id ? 0 : 20, 
+                        opacity: hoveredItem === item.id ? 1 : 0 
+                      }}
+                      transition={{ duration: 0.3, delay: 0.3 }}
+                      whileHover={{ scale: 1.05 }}
+                      type="button"
+                    >
+                      View Project <LinkIcon className="h-4 w-4" />
+                    </motion.button>
+                  )}
                 </motion.div>
               </motion.div>
             </RevealAnimation>
