@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight, Link as LinkIcon } from "lucide-react";
 import RevealAnimation from "@/components/animations/reveal-animation";
-import { ButtonGlow } from "@/components/ui/button-glow";
+import { Button } from "@/components/ui/button";
 
 const portfolioItems = [
   {
@@ -131,10 +131,15 @@ export default function PortfolioSection() {
         </div>
 
         <RevealAnimation delay={0.5}>
-          <div className="mt-16 text-center">
-            <ButtonGlow variant="accent" size="lg">
-              View All Projects <ArrowRight className="ml-2 h-5 w-5" />
-            </ButtonGlow>
+          <div className="mt-16 flex justify-center">
+            <Button
+              variant="glow"
+              size="xl"
+              className="bg-gradient-to-r from-[#24b2ff] to-[#9c3dff] hover:brightness-110"
+            >
+              View All Projects
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
           </div>
         </RevealAnimation>
       </div>
