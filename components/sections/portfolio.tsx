@@ -25,7 +25,7 @@ const portfolioItems = [
     category: "Web Design",
     image: "https://images.pexels.com/photos/7173026/pexels-photo-7173026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
-  ];
+];
 
 export default function PortfolioSection() {
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
@@ -113,14 +113,16 @@ export default function PortfolioSection() {
 
         <RevealAnimation delay={0.5}>
           <div className="mt-16 flex justify-center">
-            <Button
-              variant="glow"
-              size="xl"
-              className="bg-gradient-to-r from-[#24b2ff] to-[#9c3dff] hover:brightness-110"
-            >
-              View All Projects
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            <a href="#contact">
+              <Button
+                variant="glow"
+                size="xl"
+                className="bg-gradient-to-r from-[#24b2ff] to-[#9c3dff] hover:brightness-110"
+              >
+                Comece o seu projeto hoje
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </a>
           </div>
         </RevealAnimation>
       </div>
