@@ -1,11 +1,26 @@
+"use client";
+
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import RevealAnimation from "@/components/animations/reveal-animation";
+import { Button } from "@/components/ui/button";
+
 export default function HeroSection() {
-  // ... seus hooks ...
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"],
+  });
+
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "40%"]);
+  const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   return (
     <section
       id="hero"
       ref={ref}
-      className="relative flex min-h-[70vh] overflow-hidden pt-52 lg:pt-40" // <-- removido px-4 aqui!
+      className="relative flex min-h-[70vh] overflow-hidden pt-52 lg:pt-40"
     >
       {/* Background light effects */}
       <div className="absolute inset-0 z-0">
@@ -14,14 +29,38 @@ export default function HeroSection() {
         <div className="absolute left-1/3 bottom-1/4 h-[200px] w-[200px] rounded-full bg-accent/20 blur-[100px] light-pulse" style={{ animationDelay: "2s" }} />
       </div>
 
-      <div className="container relative z-10 mx-auto px-4"> {/* <-- adicionado px-4 aqui! */}
+      <div className="container relative z-10 mx-auto px-4">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-0">
           {/* Left Content */}
           <motion.div
             className="flex flex-col justify-center text-center lg:text-left"
             style={{ y, opacity }}
           >
-            {/* ... resto igual ... */}
+            <RevealAnimation delay={0.2}>
+              <h1 className="mb-6 text-4xl !leading-tight sm:text-5xl md:text-6xl lg:text-7xl">
+                <span className="block text-white">Crafting Digital</span>
+                <span className="block bg-gradient-to-r from-[#24b2ff] to-[#9c3dff] bg-clip-text text-transparent">Experiences</span>
+              </h1>
+            </RevealAnimation>
+            
+            <RevealAnimation delay={0.4}>
+              <p className="mx-auto mb-8 max-w-lg text-lg text-muted-foreground lg:mx-0">
+                We build stunning modern websites with cutting-edge technologies.
+                Our expertise brings your vision to life with responsive designs and smooth animations.
+              </p>
+            </RevealAnimation>
+            
+            <RevealAnimation delay={0.6}>
+              <div className="flex flex-wrap justify-center gap-4 lg:justify-start">
+                <Button 
+                  variant="glow" 
+                  size="xl"
+                  className="bg-gradient-to-r from-[#24b2ff] to-[#9c3dff] hover:brightness-110"
+                >
+                  Get Started <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </div>
+            </RevealAnimation>
           </motion.div>
 
           {/* Right Content - Static Image with Glow */}
