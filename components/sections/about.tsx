@@ -7,29 +7,29 @@ import { Button } from "@/components/ui/button";
 
 const features = [
   {
-    title: "Modern Design",
-    description: "Create stunning interfaces with the latest design trends and techniques.",
+    title: "Design Moderno",
+    description: "Criação de interfaces impressionantes com as últimas tendências, técnicas de design e com a utilização de IA.",
     icon: <Code className="h-10 w-10" />,
     color: "bg-primary/10",
     iconColor: "text-primary",
   },
   {
-    title: "Performance",
-    description: "Build lightning-fast websites that load quickly and run smoothly.",
+    title: "Desenvolvimento Rápido",
+    description: "Sites entregues a partir de 5 dias, focados em um visual moderno e de alta performance.",
     icon: <Zap className="h-10 w-10" />,
     color: "bg-secondary/10",
     iconColor: "text-secondary",
   },
   {
-    title: "Global Reach",
-    description: "Reach audiences worldwide with multilingual and accessible websites.",
+    title: "Site Estático",
+    description: "Páginas criadas com foco em velocidade, segurança e simplicidade. Não depende de banco de dados ou sistemas complexos.",
     icon: <Globe className="h-10 w-10" />,
     color: "bg-accent/10",
     iconColor: "text-accent",
   },
   {
-    title: "Advanced Tech",
-    description: "Leverage cutting-edge technologies to create innovative solutions.",
+    title: "Tecnologia Avançada",
+    description: "Utilização de frameworks modernos para o desenvolvimento e plataformas open source para hospedagem.",
     icon: <Cpu className="h-10 w-10" />,
     color: "bg-primary/10",
     iconColor: "text-primary",
@@ -44,8 +44,7 @@ export default function AboutSection() {
           <div className="mx-auto mb-16 max-w-3xl text-center">
             <h2 className="mb-4 text-white">Sobre nós</h2>
             <p className="text-lg text-muted-foreground">
-              We're a team of passionate designers and developers creating exceptional digital experiences.
-              Our approach combines creative design with technical expertise to deliver websites that stand out.
+              Somos especialistas na criação de sites e landing pages estáticas, desenvolvidos com agilidade e qualidade. Entregamos páginas modernas, bem estruturadas e prontas para converter, tudo em tempo recorde e com visual profissional.
             </p>
           </div>
         </RevealAnimation>
