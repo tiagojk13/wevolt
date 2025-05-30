@@ -1,9 +1,9 @@
 "use client";
 
-import { Code, Cpu, Globe, Zap } from "lucide-react";
+import { Code, Cpu, Globe, Zap, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import RevealAnimation from "@/components/animations/reveal-animation";
-import { ButtonGlow } from "@/components/ui/button-glow";
+import { Button } from "@/components/ui/button";
 
 const features = [
   {
@@ -24,7 +24,7 @@ const features = [
     title: "Global Reach",
     description: "Reach audiences worldwide with multilingual and accessible websites.",
     icon: <Globe className="h-10 w-10" />,
-    color: "bg-accent/10", 
+    color: "bg-accent/10",
     iconColor: "text-accent",
   },
   {
@@ -38,7 +38,7 @@ const features = [
 
 export default function AboutSection() {
   return (
-    <section id="about\" className="py-20">
+    <section id="about" className="py-20">
       <div className="container mx-auto px-4">
         <RevealAnimation>
           <div className="mx-auto mb-16 max-w-3xl text-center">
@@ -74,17 +74,17 @@ export default function AboutSection() {
         </div>
 
         <RevealAnimation delay={0.5}>
-  <div className="mt-16 flex justify-center">
-    <Button
-      variant="glow"
-      size="xl"
-      className="bg-gradient-to-r from-[#24b2ff] to-[#9c3dff] hover:brightness-110"
-    >
-      Comece o seu projeto hoje
-      <ArrowRight className="ml-2 h-4 w-4" />
-    </Button>
-  </div>
-</RevealAnimation>
+          <div className="mt-16 flex justify-center">
+            <Button
+              variant="glow"
+              size="xl"
+              className="bg-gradient-to-r from-[#24b2ff] to-[#9c3dff] hover:brightness-110"
+            >
+              Saiba mais sobre nós
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </div>
+        </RevealAnimation>
       </div>
     </section>
   );
