@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Star } from "lucide-react";
+import { Star, ArrowRight } from "lucide-react";
 import RevealAnimation from "@/components/animations/reveal-animation";
-import { ButtonGlow } from "@/components/ui/button-glow";
+import { Button } from "@/components/ui/button";
 
 const testimonials = [
   {
@@ -80,10 +80,15 @@ export default function SocialProofSection() {
         </div>
 
         <RevealAnimation delay={0.6}>
-          <div className="mt-16 text-center">
-            <ButtonGlow variant="secondary" size="lg">
+          <div className="mt-16 flex justify-center">
+            <Button
+              variant="glow"
+              size="xl"
+              className="bg-gradient-to-r from-[#24b2ff] to-[#9c3dff] hover:brightness-110"
+            >
               Read More Success Stories
-            </ButtonGlow>
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
           </div>
         </RevealAnimation>
       </div>
