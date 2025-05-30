@@ -8,7 +8,6 @@ import { Button } from "@/components/ui/button";
 
 export default function ValuePropositionSection() {
   const codeSnippets = [
-    "const animate = { opacity: [0, 1], y: [-20, 0] };",
     "<motion.div whileHover={{ scale: 1.05 }} />",
     "useEffect(() => { setLoading(false); }, []);",
     "const { scrollYProgress } = useScroll();",
@@ -19,10 +18,9 @@ export default function ValuePropositionSection() {
       <div className="container mx-auto px-4">
         <RevealAnimation>
           <div className="mx-auto mb-16 max-w-3xl text-center">
-            <h2 className="mb-4 gradient-text">Why Choose Us</h2>
+            <h2 className="mb-4 gradient-text">Porque criar um site conosco</h2>
             <p className="text-lg text-muted-foreground">
-              We combine technical expertise with creative design to deliver exceptional digital experiences.
-              Our approach is focused on quality, innovation, and client satisfaction.
+              Combinamos expertise técnica com design criativo para proporcionar experiências digitais excepcionais. Nossa abordagem é focada em qualidade, inovação e satisfação do cliente.
             </p>
           </div>
         </RevealAnimation>
@@ -43,11 +41,10 @@ export default function ValuePropositionSection() {
                 </motion.div>
               </div>
               
-              <h3 className="mb-4 text-xl font-semibold">Creative Design</h3>
+              <h3 className="mb-4 text-xl font-semibold">Design Criativo</h3>
               
               <p className="mb-6 flex-grow text-muted-foreground">
-                Our designers create beautiful, intuitive interfaces that engage users and reflect your brand identity.
-                We focus on user experience to ensure your website is not just beautiful, but functional.
+                Nossos designers criam interfaces bonitas e intuitivas que envolvem os usuários e refletem a identidade da sua marca. Nosso foco é na experiência do usuário para garantir que seu site não seja apenas bonito, mas também funcional.
               </p>
               
               <motion.div
@@ -59,39 +56,44 @@ export default function ValuePropositionSection() {
           </RevealAnimation>
 
           {/* Card 2 - Typewriter */}
-          <RevealAnimation delay={0.4}>
-            <motion.div
-              className="flex flex-col rounded-lg border border-border/50 bg-card p-6"
-              whileHover={{ y: -10, boxShadow: "0 10px 30px -10px rgba(0,0,0,0.2)" }}
-            >
-              <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-secondary/10">
-                <motion.div
-                  whileHover={{ rotate: 360 }}
-                  transition={{ duration: 0.5 }}
-                >
-                  <Code className="h-8 w-8 text-secondary" />
-                </motion.div>
-              </div>
-              
-              <h3 className="mb-4 text-xl font-semibold">Clean Code</h3>
-              
-              <div className="mb-6 flex-grow rounded-md bg-card/50 p-4 font-mono text-sm text-muted-foreground">
-                <TypewriterAnimation
-                  words={codeSnippets}
-                  loop
-                  typeSpeed={40}
-                  deleteSpeed={20}
-                  delaySpeed={2000}
-                />
-              </div>
-              
-              <motion.div
-                className="mt-auto h-1 w-16 rounded bg-secondary"
-                whileHover={{ width: "100%" }}
-                transition={{ duration: 0.5 }}
-              />
-            </motion.div>
-          </RevealAnimation>
+<RevealAnimation delay={0.4}>
+  <motion.div
+    className="flex flex-col rounded-lg border border-border/50 bg-card p-6"
+    whileHover={{ y: -10, boxShadow: "0 10px 30px -10px rgba(0,0,0,0.2)" }}
+  >
+    <div className="mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-secondary/10">
+      <motion.div
+        whileHover={{ rotate: 360 }}
+        transition={{ duration: 0.5 }}
+      >
+        <Code className="h-8 w-8 text-secondary" />
+      </motion.div>
+    </div>
+    
+    <h3 className="mb-4 text-xl font-semibold">Código Limpo</h3>
+    
+    <div className="mb-6 flex-grow rounded-md bg-card/50 p-4 font-mono text-sm text-muted-foreground">
+      <TypewriterAnimation
+        words={codeSnippets}
+        loop
+        typeSpeed={40}
+        deleteSpeed={20}
+        delaySpeed={2000}
+      />
+      {/* Texto fixo abaixo da animação */}
+      <div className="mt-4 font-sans font-normal text-xs text-muted-foreground">
+        Sites e landing pages desenvolvidos com frameworks modernos, "direto no código" para mais velocidade e segurança.
+      </div>
+    </div>
+    
+    <motion.div
+      className="mt-auto h-1 w-16 rounded bg-secondary"
+      whileHover={{ width: "100%" }}
+      transition={{ duration: 0.5 }}
+    />
+  </motion.div>
+</RevealAnimation>
+
 
           {/* Card 3 */}
           <RevealAnimation delay={0.6}>
