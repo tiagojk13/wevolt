@@ -9,9 +9,9 @@ import { Button } from "@/components/ui/button";
 const portfolioItems = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    category: "Web Development",
-    image: "https://images.pexels.com/photos/6214476/pexels-photo-6214476.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Landing Page",
+    category: "Desenvolvimento",
+    image: "/lp-brain.webp",
   },
   {
     id: 2,
@@ -25,25 +25,7 @@ const portfolioItems = [
     category: "Web Design",
     image: "https://images.pexels.com/photos/7173026/pexels-photo-7173026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
-  {
-    id: 4,
-    title: "Healthcare Dashboard",
-    category: "UI/UX Design",
-    image: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-  {
-    id: 5,
-    title: "Fitness Tracking App",
-    category: "App Development",
-    image: "https://images.pexels.com/photos/4164761/pexels-photo-4164761.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-  {
-    id: 6,
-    title: "Travel Blog Platform",
-    category: "Web Development",
-    image: "https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  },
-];
+  ];
 
 export default function PortfolioSection() {
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
@@ -53,10 +35,9 @@ export default function PortfolioSection() {
       <div className="container mx-auto px-4">
         <RevealAnimation>
           <div className="mx-auto mb-16 max-w-3xl text-center">
-            <h2 className="mb-4 gradient-text">Our Portfolio</h2>
+            <h2 className="mb-4 text-white">Portfólio</h2>
             <p className="text-lg text-muted-foreground">
-              Explore our recent projects and see how we've helped businesses transform their digital presence.
-              Each project showcases our commitment to excellence and innovation.
+              Explore nossos projetos recentes e veja como ajudamos empresas a transformar sua presença digital. Cada projeto demonstra nosso compromisso com a excelência e a inovação.
             </p>
           </div>
         </RevealAnimation>
