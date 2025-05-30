@@ -38,15 +38,14 @@ export default function HeroSection() {
           >
             <RevealAnimation delay={0.2}>
               <h1 className="mb-6 text-4xl !leading-tight sm:text-5xl md:text-6xl lg:text-7xl">
-                <span className="block text-white">Crafting Digital</span>
-                <span className="block bg-gradient-to-r from-[#24b2ff] to-[#9c3dff] bg-clip-text text-transparent">Experiences</span>
+                <span className="block text-white">Criação de sites e landing pages</span>
+                <span className="block bg-gradient-to-r from-[#24b2ff] to-[#9c3dff] bg-clip-text text-transparent">com agilidade</span>
               </h1>
             </RevealAnimation>
             
             <RevealAnimation delay={0.4}>
               <p className="mx-auto mb-8 max-w-lg text-lg text-muted-foreground lg:mx-0">
-                We build stunning modern websites with cutting-edge technologies.
-                Our expertise brings your vision to life with responsive designs and smooth animations.
+                Utilizamos Inteligência Artificial e tecnologias modernas para entregar sua presença digital em tempo recorde, com design profissional e performance impecável
               </p>
             </RevealAnimation>
             
