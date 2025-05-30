@@ -10,7 +10,7 @@ import RevealAnimation from "@/components/animations/reveal-animation";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { ButtonGlow } from "@/components/ui/button-glow";
+import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
 const formSchema = z.object({
@@ -37,10 +37,8 @@ export default function CTASection() {
 
   const onSubmit = async (data: FormValues) => {
     setIsSubmitting(true);
-    
     // Simulate API call
     await new Promise((resolve) => setTimeout(resolve, 1500));
-    
     toast.success("Message sent successfully! We'll get back to you soon.");
     form.reset();
     setIsSubmitting(false);
@@ -57,7 +55,7 @@ export default function CTASection() {
       <div className="container relative z-10 mx-auto px-4">
         <RevealAnimation>
           <div className="mx-auto mb-16 max-w-3xl text-center">
-            <h2 className="mb-4 gradient-text">Get In Touch</h2>
+            <h2 className="mb-4 gradient-text">Entre em contato</h2>
             <p className="text-lg text-muted-foreground">
               Ready to start your next project? Contact us today and let's discuss how we can bring your vision to life.
               We're excited to hear from you and help you achieve your digital goals.
@@ -79,9 +77,9 @@ export default function CTASection() {
                       name="name"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Name</FormLabel>
+                          <FormLabel>Nome</FormLabel>
                           <FormControl>
-                            <Input placeholder="Your name" {...field} />
+                            <Input placeholder="Seu nome" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -93,9 +91,9 @@ export default function CTASection() {
                       name="email"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Email</FormLabel>
+                          <FormLabel>E-mail</FormLabel>
                           <FormControl>
-                            <Input type="email" placeholder="Your email" {...field} />
+                            <Input type="email" placeholder="Seu e-mail" {...field} />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
@@ -108,9 +106,9 @@ export default function CTASection() {
                     name="phone"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Phone / WhatsApp</FormLabel>
+                        <FormLabel>Telefone / WhatsApp</FormLabel>
                         <FormControl>
-                          <Input placeholder="Your phone number" {...field} />
+                          <Input placeholder="Ex. 11 9 9999-0000" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -122,10 +120,10 @@ export default function CTASection() {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Message</FormLabel>
+                        <FormLabel>Mensagem</FormLabel>
                         <FormControl>
                           <Textarea 
-                            placeholder="Tell us about your project" 
+                            placeholder="Conte-nos sobre o seu projeto" 
                             className="min-h-32" 
                             {...field} 
                           />
@@ -136,19 +134,19 @@ export default function CTASection() {
                   />
 
                   <div className="text-center">
-                    <ButtonGlow 
-                      type="submit" 
-                      variant="primary" 
-                      size="lg"
-                      className="w-full sm:w-auto"
+                    <Button
+                      type="submit"
+                      variant="glow"
+                      size="xl"
+                      className="w-full sm:w-auto bg-gradient-to-r from-[#24b2ff] to-[#9c3dff] hover:brightness-110"
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? (
-                        <>Sending Message...</>
+                        <>Enviando...</>
                       ) : (
-                        <>Send Message <Send className="ml-2 h-5 w-5" /></>
+                        <>Envie sua mensagem <Send className="ml-2 h-5 w-5" /></>
                       )}
-                    </ButtonGlow>
+                    </Button>
                   </div>
                 </form>
               </Form>
