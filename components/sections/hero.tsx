@@ -50,18 +50,17 @@ export default function HeroSection() {
               </p>
             </RevealAnimation>
             
-            <RevealAnimation delay={0.5}>
-  <div className="mt-16 flex justify-center">
-    <Button
-      variant="glow"
-      size="xl"
-      className="bg-gradient-to-r from-[#24b2ff] to-[#9c3dff] hover:brightness-110"
-    >
-      Saiba mais sobre nós
-      <ArrowRight className="ml-2 h-4 w-4" />
-    </Button>
-  </div>
-</RevealAnimation>
+            <RevealAnimation delay={0.6}>
+              <div className="flex flex-wrap justify-center gap-4 lg:justify-start">
+                <Button 
+                  variant="glow" 
+                  size="xl"
+                  className="bg-gradient-to-r from-[#24b2ff] to-[#9c3dff] hover:brightness-110"
+                >
+                  Solicite um orçamento <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
+              </div>
+            </RevealAnimation>
           </motion.div>
 
           {/* Right Content - Static Image with Glow */}
