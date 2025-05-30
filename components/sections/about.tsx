@@ -42,7 +42,7 @@ export default function AboutSection() {
       <div className="container mx-auto px-4">
         <RevealAnimation>
           <div className="mx-auto mb-16 max-w-3xl text-center">
-            <h2 className="mb-4 gradient-text">About Our Studio</h2>
+            <h2 className="mb-4 text-white">Sobre nós</h2>
             <p className="text-lg text-muted-foreground">
               We're a team of passionate designers and developers creating exceptional digital experiences.
               Our approach combines creative design with technical expertise to deliver websites that stand out.
