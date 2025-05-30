@@ -55,8 +55,7 @@ export default function ValuePropositionSection() {
             </motion.div>
           </RevealAnimation>
 
-          {/* Card 2 - Typewriter */}
-<RevealAnimation delay={0.4}>
+          <RevealAnimation delay={0.4}>
   <motion.div
     className="flex flex-col rounded-lg border border-border/50 bg-card p-6"
     whileHover={{ y: -10, boxShadow: "0 10px 30px -10px rgba(0,0,0,0.2)" }}
@@ -69,9 +68,7 @@ export default function ValuePropositionSection() {
         <Code className="h-8 w-8 text-secondary" />
       </motion.div>
     </div>
-    
     <h3 className="mb-4 text-xl font-semibold">Código Limpo</h3>
-    
     <div className="mb-6 flex-grow rounded-md bg-card/50 p-4 font-mono text-sm text-muted-foreground">
       <TypewriterAnimation
         words={codeSnippets}
@@ -80,12 +77,10 @@ export default function ValuePropositionSection() {
         deleteSpeed={20}
         delaySpeed={2000}
       />
-      {/* Texto fixo abaixo da animação */}
-      <div className="mt-4 font-sans font-normal text-xs text-muted-foreground">
-        Sites e landing pages desenvolvidos com frameworks modernos, "direto no código" para mais velocidade e segurança.
-      </div>
     </div>
-    
+    <p className="mb-6 flex-grow text-muted-foreground">
+      Sites e landing pages desenvolvidos com frameworks modernos, "direto no código" para mais velocidade e segurança.
+    </p>
     <motion.div
       className="mt-auto h-1 w-16 rounded bg-secondary"
       whileHover={{ width: "100%" }}
@@ -93,7 +88,6 @@ export default function ValuePropositionSection() {
     />
   </motion.div>
 </RevealAnimation>
-
 
           {/* Card 3 */}
           <RevealAnimation delay={0.6}>
