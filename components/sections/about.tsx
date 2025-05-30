@@ -15,7 +15,7 @@ const features = [
   },
   {
     title: "Desenvolvimento Rápido",
-    description: "Sites entregues a partir de 5 dias, focados em um visual moderno e de alta performance.",
+    description: "Sites entregues a partir de 5 dias, focados na retensão e conversão de usuário, com um visual moderno e de alta performance.",
     icon: <Zap className="h-10 w-10" />,
     color: "bg-secondary/10",
     iconColor: "text-secondary",
