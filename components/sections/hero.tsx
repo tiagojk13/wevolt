@@ -38,7 +38,7 @@ export default function HeroSection() {
           >
             <RevealAnimation delay={0.2}>
               <h1 className="mb-6 text-4xl !leading-tight sm:text-5xl md:text-6xl lg:text-7xl">
-                <span className="block text-white">Criação de sites e landing pages</span>
+                <span className="block text-white">Criação de sites</span>
                 <span className="block bg-gradient-to-r from-[#24b2ff] to-[#9c3dff] bg-clip-text text-transparent">com agilidade</span>
               </h1>
             </RevealAnimation>
