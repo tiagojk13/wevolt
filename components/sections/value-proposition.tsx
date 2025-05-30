@@ -79,7 +79,7 @@ export default function ValuePropositionSection() {
       />
     </div>
     <p className="mb-6 flex-grow text-muted-foreground">
-      Sites e landing pages desenvolvidos com frameworks modernos, "direto no código" para mais velocidade e segurança.
+      Sites e landing pages desenvolvidos com frameworks modernos, para mais velocidade e segurança.
     </p>
     <motion.div
       className="mt-auto h-1 w-16 rounded bg-secondary"
@@ -108,7 +108,6 @@ export default function ValuePropositionSection() {
               
               <p className="mb-6 flex-grow text-muted-foreground">
                 Otimizamos todos os aspectos do seu site para garantir tempos de carregamento extremamente rápidos e um desempenho impecável. A velocidade é crucial para a retenção de usuários e o posicionamento em SEO.
-                Speed is crucial for user retention and SEO rankings.
               </p>
               
               <motion.div
