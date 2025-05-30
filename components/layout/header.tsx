@@ -8,12 +8,12 @@ import { Button } from "@/components/ui/button";
 
 const navItems = [
   { name: "Home", href: "#hero" },
-  { name: "About", href: "#about" },
-  { name: "Portfolio", href: "#portfolio" },
-  { name: "Process", href: "#process" },
-  { name: "Values", href: "#values" },
-  { name: "Testimonials", href: "#testimonials" },
-  { name: "Contact", href: "#contact" },
+  { name: "Sobre", href: "#about" },
+  { name: "Portfólio", href: "#portfolio" },
+  { name: "Processo", href: "#process" },
+  { name: "Proposta de valor", href: "#values" },
+  { name: "Depoimentos", href: "#testimonials" },
+  { name: "Contato", href: "#contact" },
 ];
 
 export default function Header() {
