@@ -55,10 +55,9 @@ export default function CTASection() {
       <div className="container relative z-10 mx-auto px-4">
         <RevealAnimation>
           <div className="mx-auto mb-16 max-w-3xl text-center">
-            <h2 className="mb-4 gradient-text">Entre em contato</h2>
+            <h2 className="mb-4 text-white">Entre em contato</h2>
             <p className="text-lg text-muted-foreground">
-              Ready to start your next project? Contact us today and let's discuss how we can bring your vision to life.
-              We're excited to hear from you and help you achieve your digital goals.
+              Pronto para começar seu próximo projeto? Entre em contato conosco hoje mesmo e vamos discutir como podemos dar vida à sua visão.
             </p>
           </div>
         </RevealAnimation>
