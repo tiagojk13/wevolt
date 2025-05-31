@@ -14,8 +14,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Modern Landing Page',
-  description: 'A modern landing page built with Next.js, Tailwind CSS, and Framer Motion',
+  title: 'Landing Pages e Sites Rápidos | Design + Performance',
+  description: 'Sites profissionais e páginas de alta conversão com IA, código limpo e hospedagem inteligente. Pronto para começar?',
   icons: [
     { rel: 'icon', type: 'image/svg+xml', url: '/icone-wevolt.svg' },
     { rel: 'icon', type: 'image/x-icon', url: '/favicon.ico' }, // opcional para fallback
