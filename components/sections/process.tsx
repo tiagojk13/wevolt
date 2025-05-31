@@ -121,6 +121,7 @@ export default function ProcessSection() {
 
         <RevealAnimation delay={0.8}>
           <div className="mt-16 flex justify-center">
+           <a href="#contact">
             <Button
               variant="glow"
               size="xl"
@@ -129,6 +130,7 @@ export default function ProcessSection() {
               Crei seu site com velocidade
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
+           </a>
           </div>
         </RevealAnimation>
       </div>
