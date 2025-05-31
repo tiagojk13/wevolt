@@ -16,6 +16,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: 'Modern Landing Page',
   description: 'A modern landing page built with Next.js, Tailwind CSS, and Framer Motion',
+  icons: [
+    { rel: 'icon', type: 'image/x-icon', url: '/favicon.ico' },
+  ],
 };
 
 export default function RootLayout({
