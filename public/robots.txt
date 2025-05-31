@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://wevolt.digital
+
+# Sitemaps
+Sitemap: https://wevolt.digital/sitemap.xml
