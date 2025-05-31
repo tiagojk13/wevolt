@@ -2,6 +2,14 @@ import React from "react";
 import { Mail, Phone, MapPin, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+const quickLinks = [
+  { label: "Home", anchor: "home" },
+  { label: "Sobre", anchor: "about" },
+  { label: "Portfólio", anchor: "portfolio" },
+  { label: "Processo", anchor: "process" },
+  { label: "Contato", anchor: "contact" },
+];
+
 export default function Footer() {
   return (
     <footer className="border-t border-border/50 bg-card/30 pt-12 pb-6">
@@ -40,13 +48,13 @@ export default function Footer() {
           <div>
             <h3 className="mb-4 text-lg font-semibold">Links Rápidos</h3>
             <ul className="space-y-2">
-              {["Home", "Sobre", "Portfólio", "Processo", "Contato"].map((item) => (
-                <li key={item}>
+              {quickLinks.map((item) => (
+                <li key={item.label}>
                   <a
-                    href={`#${item.toLowerCase()}`}
+                    href={`#${item.anchor}`}
                     className="text-sm text-muted-foreground transition-colors hover:text-primary"
                   >
-                    {item}
+                    {item.label}
                   </a>
                 </li>
               ))}
