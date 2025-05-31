@@ -14,10 +14,10 @@ import { Button } from "@/components/ui/button";
 import { toast } from "sonner";
 
 const formSchema = z.object({
-  name: z.string().min(2, "Name must be at least 2 characters"),
-  email: z.string().email("Please enter a valid email"),
-  phone: z.string().min(6, "Please enter a valid phone number"),
-  message: z.string().min(10, "Message must be at least 10 characters"),
+  name: z.string().min(2, "O campo de nome precisa ter ao menos 2 caracteres"),
+  email: z.string().email("Por favor, insira um e-mail válido"),
+  phone: z.string().min(6, "Por favor, insira um número de telefone válido"),
+  message: z.string().min(10, "O campo de mensagem precisa ter ao menos 10 caracteres"),
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -39,7 +39,7 @@ export default function CTASection() {
     setIsSubmitting(true);
     // Simulate API call
     await new Promise((resolve) => setTimeout(resolve, 1500));
-    toast.success("Message sent successfully! We'll get back to you soon.");
+    toast.success("Mensagem enviada com sucesso! Entraremos em contato com você em breve.");
     form.reset();
     setIsSubmitting(false);
   };
