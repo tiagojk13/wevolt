@@ -8,9 +8,9 @@ import { Button } from "@/components/ui/button";
 const testimonials = [
   {
     id: 1,
-    name: "Sarah Johnson",
-    title: "CEO, TechStart",
-    content: "Working with CodeStudio was a game-changer for our business. Their team delivered a website that exceeded our expectations and helped us increase conversions by 40%.",
+    name: "Tiago Kikumoto",
+    title: "Analista de Marketing",
+    content: "Eu precisava de uma prova de conceito rápida para um projeto, sem utilizar os CMSs tradicionais que são muito engessados. Em poucos dias tive esse protótipo pronto",
     rating: 5,
     image: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
@@ -38,10 +38,9 @@ export default function SocialProofSection() {
       <div className="container mx-auto px-4">
         <RevealAnimation>
           <div className="mx-auto mb-16 max-w-3xl text-center">
-            <h2 className="mb-4 gradient-text">Client Testimonials</h2>
+            <h2 className="mb-4 gradient-text">O que dizem nossos clientes</h2>
             <p className="text-lg text-muted-foreground">
-              Don't just take our word for it. Here's what our clients have to say about working with us.
-              We're proud to have helped businesses of all sizes achieve their digital goals.
+              Veja o que nossos clientes têm a dizer sobre trabalhar conosco. Temos orgulho de ter ajudado pessoas e empresas a atingir seus objetivos.
             </p>
           </div>
         </RevealAnimation>
@@ -61,18 +60,9 @@ export default function SocialProofSection() {
                 
                 <p className="mb-6 flex-grow italic text-muted-foreground">"{testimonial.content}"</p>
                 
-                <div className="mt-auto flex items-center">
-                  <div className="mr-4 h-12 w-12 overflow-hidden rounded-full">
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">{testimonial.name}</h4>
-                    <p className="text-sm text-muted-foreground">{testimonial.title}</p>
-                  </div>
+                <div className="mt-auto">
+                  <h4 className="font-semibold">{testimonial.name}</h4>
+                  <p className="text-sm text-muted-foreground">{testimonial.title}</p>
                 </div>
               </motion.div>
             </RevealAnimation>
@@ -81,14 +71,16 @@ export default function SocialProofSection() {
 
         <RevealAnimation delay={0.6}>
           <div className="mt-16 flex justify-center">
+           <a href="#contact">
             <Button
               variant="glow"
               size="xl"
               className="bg-gradient-to-r from-[#24b2ff] to-[#9c3dff] hover:brightness-110"
             >
-              Read More Success Stories
+              Desenvolva o seu projeto com sucesso
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
+           </a>
           </div>
         </RevealAnimation>
       </div>
