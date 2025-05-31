@@ -127,7 +127,7 @@ export default function ProcessSection() {
               size="xl"
               className="bg-gradient-to-r from-[#24b2ff] to-[#9c3dff] hover:brightness-110"
             >
-              Crei seu site com velocidade
+              Crie seu site com velocidade
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
            </a>
