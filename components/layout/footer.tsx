@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const quickLinks = [
-  { label: "Home", anchor: "home" },
+  { label: "Home", anchor: "hero" },
   { label: "Sobre", anchor: "about" },
   { label: "Portfólio", anchor: "portfolio" },
   { label: "Processo", anchor: "process" },
