@@ -74,14 +74,16 @@ export default function AboutSection() {
 
         <RevealAnimation delay={0.5}>
           <div className="mt-16 flex justify-center">
+           <a href="#contact">
             <Button
               variant="glow"
               size="xl"
               className="bg-gradient-to-r from-[#24b2ff] to-[#9c3dff] hover:brightness-110"
             >
-              Saiba mais sobre nós
+              Transforme sua ideia em um site profissional
               <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
+           </a>
           </div>
         </RevealAnimation>
       </div>
