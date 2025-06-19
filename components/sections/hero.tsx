@@ -69,7 +69,7 @@ export default function HeroSection() {
             <div className="relative aspect-[4/3] w-full max-w-[600px]">
               <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-primary/30 to-secondary/30 blur-md light-pulse" />
               <img
-                src="/developer.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="/developer.webp?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                 alt="Desenvolvedor"
                 className="relative h-full w-full rounded-lg object-cover"
               />
