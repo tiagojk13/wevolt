@@ -12,18 +12,21 @@ const portfolioItems = [
     title: "Landing Page",
     category: "Desenvolvimento",
     image: "/lp-brain.webp",
+    url: "https://tiagoproject.vercel.app/",
   },
   {
     id: 2,
-    title: "Mobile Banking App",
-    category: "App Design",
-    image: "https://images.pexels.com/photos/6804073/pexels-photo-6804073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    title: "Site",
+    category: "Desenvolvimento",
+    image: "/site-croche.webp",
+    url: "https://pricamposcroche.com.br",
   },
   {
     id: 3,
     title: "Real Estate Website",
     category: "Web Design",
-    image: "https://images.pexels.com/photos/7173026/pexels-photo-7173026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    image:
+      "https://images.pexels.com/photos/7173026/pexels-photo-7173026.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
 ];
 
@@ -31,13 +34,18 @@ export default function PortfolioSection() {
   const [hoveredItem, setHoveredItem] = useState<number | null>(null);
 
   return (
-    <section id="portfolio" className="py-20 bg-gradient-to-b from-background to-card/30">
+    <section
+      id="portfolio"
+      className="py-20 bg-gradient-to-b from-background to-card/30"
+    >
       <div className="container mx-auto px-4">
         <RevealAnimation>
           <div className="mx-auto mb-16 max-w-3xl text-center">
             <h2 className="mb-4 text-white">Portfólio</h2>
             <p className="text-lg text-muted-foreground">
-              Explore nossos projetos recentes e veja como ajudamos empresas a transformar sua presença digital. Cada projeto demonstra nosso compromisso com a excelência e a inovação.
+              Explore nossos projetos recentes e veja como ajudamos empresas a
+              transformar sua presença digital. Cada projeto demonstra nosso
+              compromisso com a excelência e a inovação.
             </p>
           </div>
         </RevealAnimation>
@@ -62,48 +70,49 @@ export default function PortfolioSection() {
                     className="h-full w-full object-cover object-center transition-transform duration-500"
                   />
                 </motion.div>
-                
+
                 <motion.div
                   className="absolute inset-0 flex flex-col items-center justify-center bg-card/80 p-4 text-center backdrop-blur-sm"
                   initial={{ opacity: 0 }}
-                  animate={{ opacity: hoveredItem === item.id ? 1 : 0 }}
+                  animate={{
+                    opacity: hoveredItem === item.id ? 1 : 0,
+                  }}
                   transition={{ duration: 0.3 }}
                 >
-                  <motion.h3 
+                  <motion.h3
                     className="mb-2 text-xl font-semibold"
                     initial={{ y: 20, opacity: 0 }}
-                    animate={{ 
-                      y: hoveredItem === item.id ? 0 : 20, 
-                      opacity: hoveredItem === item.id ? 1 : 0 
+                    animate={{
+                      y: hoveredItem === item.id ? 0 : 20,
+                      opacity: hoveredItem === item.id ? 1 : 0,
                     }}
                     transition={{ duration: 0.3, delay: 0.1 }}
                   >
                     {item.title}
                   </motion.h3>
-                  
-                  <motion.p 
+
+                  <motion.p
                     className="mb-4 text-muted-foreground"
                     initial={{ y: 20, opacity: 0 }}
-                    animate={{ 
-                      y: hoveredItem === item.id ? 0 : 20, 
-                      opacity: hoveredItem === item.id ? 1 : 0 
+                    animate={{
+                      y: hoveredItem === item.id ? 0 : 20,
+                      opacity: hoveredItem === item.id ? 1 : 0,
                     }}
                     transition={{ duration: 0.3, delay: 0.2 }}
                   >
                     {item.category}
                   </motion.p>
-                  
-                  {/* Diferenciação: Link real só no primeiro card */}
-                  {item.id === 1 ? (
+
+                  {item.url ? (
                     <motion.a
-                      href="https://tiagoproject.vercel.app/"
+                      href={item.url}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center justify-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
                       initial={{ y: 20, opacity: 0 }}
-                      animate={{ 
-                        y: hoveredItem === item.id ? 0 : 20, 
-                        opacity: hoveredItem === item.id ? 1 : 0 
+                      animate={{
+                        y: hoveredItem === item.id ? 0 : 20,
+                        opacity: hoveredItem === item.id ? 1 : 0,
                       }}
                       transition={{ duration: 0.3, delay: 0.3 }}
                       whileHover={{ scale: 1.05 }}
@@ -114,9 +123,9 @@ export default function PortfolioSection() {
                     <motion.button
                       className="flex items-center justify-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
                       initial={{ y: 20, opacity: 0 }}
-                      animate={{ 
-                        y: hoveredItem === item.id ? 0 : 20, 
-                        opacity: hoveredItem === item.id ? 1 : 0 
+                      animate={{
+                        y: hoveredItem === item.id ? 0 : 20,
+                        opacity: hoveredItem === item.id ? 1 : 0,
                       }}
                       transition={{ duration: 0.3, delay: 0.3 }}
                       whileHover={{ scale: 1.05 }}
