@@ -12,15 +12,13 @@ const testimonials = [
     title: "Analista de Marketing",
     content: "Eu precisava de uma prova de conceito rápida para um projeto, sem utilizar os CMSs tradicionais que são muito engessados. Em poucos dias tive esse protótipo pronto",
     rating: 5,
-    image: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     id: 2,
-    name: "Michael Chen",
-    title: "Marketing Director, GrowthLabs",
-    content: "The team at CodeStudio understood our vision from day one. They created a website that perfectly represents our brand and has received amazing feedback from our customers.",
+    name: "Priscila Campos",
+    title: "Proprietária, Pri Campos Crochê",
+    content: "Ter um site novo com visual moderno e personalizado fez toda a diferença. Agora tenho uma presença profissional que combina comigo e passa confiança aos meus clientes desde o primeiro clique.",
     rating: 5,
-    image: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     id: 3,
@@ -28,7 +26,6 @@ const testimonials = [
     title: "Founder, EcoShop",
     content: "I was impressed by the attention to detail and creativity that CodeStudio brought to our project. They delivered on time and were a pleasure to work with throughout the process.",
     rating: 5,
-    image: "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
 ];
 

@@ -117,7 +117,7 @@ export default function PortfolioSection() {
                       transition={{ duration: 0.3, delay: 0.3 }}
                       whileHover={{ scale: 1.05 }}
                     >
-                      View Project <LinkIcon className="h-4 w-4" />
+                      Ver projeto <LinkIcon className="h-4 w-4" />
                     </motion.a>
                   ) : (
                     <motion.button
@@ -131,7 +131,7 @@ export default function PortfolioSection() {
                       whileHover={{ scale: 1.05 }}
                       type="button"
                     >
-                      View Project <LinkIcon className="h-4 w-4" />
+                      Ver projeto <LinkIcon className="h-4 w-4" />
                     </motion.button>
                   )}
                 </motion.div>
